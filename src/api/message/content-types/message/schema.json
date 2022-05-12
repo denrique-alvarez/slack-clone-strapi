@@ -15,13 +15,16 @@
     "body": {
       "type": "text"
     },
-    "dateSend": {
-      "type": "datetime"
-    },
     "channel": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::channel.channel",
+      "inversedBy": "messages"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "messages"
     }
   }
