@@ -63,12 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "channels": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::channel.channel",
-      "inversedBy": "users"
-    },
     "messages": {
       "type": "relation",
       "relation": "oneToMany",

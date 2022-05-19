@@ -4,7 +4,8 @@
   "info": {
     "singularName": "channel",
     "pluralName": "channels",
-    "displayName": "Channel"
+    "displayName": "Channel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,10 +21,10 @@
       "target": "api::message.message",
       "mappedBy": "channel"
     },
-    "users": {
+    "endusers": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
+      "target": "api::enduser.enduser",
       "inversedBy": "channels"
     }
   }
