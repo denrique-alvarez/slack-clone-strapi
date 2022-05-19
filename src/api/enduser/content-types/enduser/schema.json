@@ -21,6 +21,12 @@
       "relation": "manyToMany",
       "target": "api::channel.channel",
       "mappedBy": "endusers"
+    },
+    "messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::message.message",
+      "mappedBy": "enduser"
     }
   }
 }

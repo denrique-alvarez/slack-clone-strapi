@@ -21,10 +21,10 @@
       "target": "api::channel.channel",
       "inversedBy": "messages"
     },
-    "users_permissions_user": {
+    "enduser": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
+      "target": "api::enduser.enduser",
       "inversedBy": "messages"
     }
   }
